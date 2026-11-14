@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pak-Clip | Create Viral Clips</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#080b12;color:#f5f7ff;font-family:Arial,sans-serif}
+nav{padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222b3b}
+.logo{font-size:26px;font-weight:900}
+.logo span,h1 span{color:#29dba0}
+nav a{color:#bdc6d5;text-decoration:none;margin-left:20px}
+.btn{background:#20d69a;color:#06120e;border:0;padding:14px 22px;border-radius:9px;font-weight:bold;cursor:pointer}
+.hero{text-align:center;padding:100px 20px;background:radial-gradient(ellipse at top,#123d36,#080b12 70%)}
+.tag{color:#35e5ac;border:1px solid #236b55;padding:9px 15px;border-radius:30px;display:inline-block}
+h1{font-size:clamp(42px,7vw,75px);margin:28px 0 20px}
+.hero p{color:#aab4c5;line-height:1.8;max-width:600px;margin:auto}
+.hero .btn{margin-top:30px}
+section{padding:70px 7%}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2{font-size:32px;margin-bottom:12px}
+.heading p{color:#929caf}
+.workspace,.plan,.payments{background:#111725;border:1px solid #283348;border-radius:16px;padding:27px}
+.workspace{max-width:850px;margin:auto}
+.credits{display:flex;justify-content:space-between;gap:10px;margin-bottom:20px}
+.credit{color:#29dba0;font-weight:bold}
+.upload{border:2px dashed #3b5363;border-radius:12px;padding:45px 15px;text-align:center;background:#0b111d}
+.upload p{color:#aab4c5;margin:12px}
+video{width:100%;max-height:350px;margin-top:20px;display:none}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1050px;margin:auto}
+.plan h3{font-size:22px}
+.price{font-size:32px;font-weight:bold;margin:20px 0}
+.price small{font-size:13px;color:#929caf}
+.plan p,.plan li{color:#aab4c5}
+.plan ul{list-style:none;margin:20px 0}
+.plan li{margin:14px 0;font-size:14px}
+.plan li:before{content:"✓ ";color:#29dba0}
+.plan button{width:100%}
+.featured{border-color:#29dba0}
+.payments{text-align:center;max-width:850px;margin:auto}
+.methods{display:flex;justify-content:center;flex-wrap:wrap;gap:15px;margin:25px 0}
+.method{background:#202a3a;padding:15px 25px;border-radius:9px;font-weight:bold}
+.note{font-size:13px;color:#929caf}
+footer{text-align:center;padding:30px;border-top:1px solid #222b3b;color:#8390a4}
+@media(max-width:700px){
+nav{padding:18px 5%}nav a{margin-left:8px;font-size:12px}
+.plans{grid-template-columns:1fr}section{padding:50px 5%}
+.workspace{padding:15px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">PAK<span>-CLIP</span></div>
+<div>
+<a href="#studio">Studio</a>
+<a href="#pricing">Pricing</a>
+</div>
+</nav>
+
+<header class="hero">
+<div class="tag">🇵🇰 MADE FOR PAKISTAN</div>
+<h1>Turn Videos Into<br><span>Viral Clips.</span></h1>
+<p>Your video clipping workspace. Upload videos, preview your content and prepare short-form videos for social media.</p>
+<a href="#studio"><button class="btn">Start Clipping →</button></a>
+</header>
+
+<section id="studio">
+<div class="heading">
+<h2>Your Clipping Studio 🎬</h2>
+<p>Upload a video from your device to preview it.</p>
+</div>
+<div class="workspace">
+<div class="credits">
+<span>Daily free credits</span>
+<span class="credit">200 / 200 credits</span>
+</div>
+<div class="upload">
+<h2>🎥</h2>
+<h3>Upload Your Video</h3>
+<p>Select a video to preview it here.</p>
+<input type="file" id="videoInput" accept="video/*">
+<video id="preview" controls></video>
+</div>
+</div>
+</section>
+
+<section id="pricing">
+<div class="heading">
+<h2>Choose Your Plan</h2>
+<p>Simple pricing for Pakistani creators.</p>
+</div>
+<div class="plans">
+<div class="plan">
+<h3>Free</h3>
+<div class="price">Rs. 0</div>
+<p>Start creating today.</p>
+<ul>
+<li>200 credits every 24 hours</li>
+<li>Video upload</li>
+<li>Basic workspace</li>
+</ul>
+<button class="btn" onclick="alert('Free plan selected!')">Get Started</button>
+</div>
+<div class="plan">
+<h3>Monthly</h3>
+<div class="price">Rs. 1,499 <small>/ month</small></div>
+<p>For regular creators.</p>
+<ul>
+<li>Unlimited credits</li>
+<li>Premium workspace</li>
+<li>All clipping tools</li>
+</ul>
+<button class="btn" onclick="alert('Monthly payment integration coming soon!')">Choose Monthly</button>
+</div>
+<div class="plan featured">
+<h3>Yearly ⭐</h3>
+<div class="price">Rs. 2,499 <small>/ year</small></div>
+<p>For serious creators.</p>
+<ul>
+<li>Unlimited credits</li>
+<li>Premium workspace</li>
+<li>All clipping tools</li>
+<li>12-month membership</li>
+</ul>
+<button class="btn" onclick="alert('Yearly payment integration coming soon!')">Choose Yearly</button>
+</div>
+</div>
+</section>
+
+<section id="payments">
+<div class="heading">
+<h2>Payment Methods</h2>
+<p>Pakistani payment options.</p>
+</div>
+<div class="payments">
+<h3>Choose your payment method</h3>
+<div class="methods">
+<div class="method">Easypaisa</div>
+<div class="method">JazzCash</div>
+<div class="method">SadaPay</div>
+</div>
+<p class="note">Secure payment integration will be added in a future update.</p>
+</div>
+</section>
+
+<footer>© 2026 Pak-Clip | Built for Pakistan 🇵🇰</footer>
+
+<script>
+const input=document.getElementById("videoInput");
+const preview=document.getElementById("preview");
+let videoURL=null;
+
+input.addEventListener("change",()=>{
+const file=input.files[0];
+if(!file)return;
+if(videoURL)URL.revokeObjectURL(videoURL);
+videoURL=URL.createObjectURL(file);
+preview.src=videoURL;
+preview.style.display="block";
+});
+</script>
+</body>
+</html>
